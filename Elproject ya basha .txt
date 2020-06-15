@@ -1,0 +1,133 @@
+def football():
+    fform = tkinter.Tk()
+    fform.title('Football Tournament')
+    fform.geometry('666x400+350+184')
+    fform.resizable(False, False)
+    PF = PhotoImage(file='C:\\Users\\Mohamed ElHmzawy\\Desktop\\resize-15763549672126938837downloada7aaaaaa.png')
+    LF1 = ttk.Label(fform, text='Work Hard Play Hard', font=('impact', 20)).pack()
+    LF6 = ttk.Label(fform,
+                    text='??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????').pack()
+    LF2 = ttk.Label(fform, text='Team Name', font=('impact', 15)).place(x=80, y=100)
+    LF3 = ttk.Label(fform, text='Kit Color', font=('impact', 15)).place(x=80, y=140)
+    LF4 = ttk.Label(fform, text='Year', font=('impact', 15)).place(x=80, y=180)
+    LF5 = ttk.Label(fform, text='Team Leader', font=('impact', 15)).place(x=80, y=220)
+    TF1 = ttk.Entry(fform, font=('consolas', 15)).place(x=260, y=100)
+    TF2 = ttk.Entry(fform, font=('consolas', 15)).place(x=260, y=140)
+    TF4 = ttk.Entry(fform, font=('consolas', 15)).place(x=260, y=220)
+    C1 = ttk.Combobox(fform, state='readonly', value=(
+    'Choose a year', 'First Year', 'Second Year', 'Third Year-CS', 'Third Year-IT', 'Third Year-IS', 'Third Year-SE',
+    'Fourth Year-CS', 'Fourth Year-IT', 'Fourth Year-IS', 'Fourth Year-SE'))
+    C1.current(0)
+    C1.place(x=260, y=180)
+
+    def msg():
+        messagebox.showinfo('', 'You are in')
+
+    BF1 = ttk.Button(fform, image=PF, command=msg).place(x=280, y=290)
+    fform.mainloop()
+
+def karate():
+    kform = tkinter.Tk()
+    kform.title('Karate Tournament')
+    kform.geometry('666x400+350+184')
+    kform.resizable(False, False)
+    PK = PhotoImage(file='C:\\Users\\Mohamed ElHmzawy\\Desktop\\resize-15763549672126938837downloada7aaaaaa.png')
+    LK1 = ttk.Label(kform, text='Fight as a Champion', font=('impact', 20)).pack()
+    LK6 = ttk.Label(kform,
+                    text='??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????').pack()
+    LK2 = ttk.Label(kform, text='Name', font=('impact', 15)).place(x=150, y=100)
+    LK4 = ttk.Label(kform, text='Year', font=('impact', 15)).place(x=150, y=140)
+    LK5 = ttk.Label(kform, text='Branch', font=('impact', 15)).place(x=150, y=180)
+    C1 = ttk.Combobox(kform, state='readonly', value=('Choose a branch', 'Kata', 'Komote'))
+    C1.current(0)
+    C1.place(x=260, y=187)
+    TK1 = ttk.Entry(kform, font=('consolas', 15)).place(x=260, y=105)
+    C2 = ttk.Combobox(kform, state='readonly', value=(
+    'Choose a year', 'First Year', 'Second Year', 'Third Year-CS', 'Third Year-IT', 'Third Year-IS', 'Third Year-SE',
+    'Fourth Year-CS', 'Fourth Year-IT', 'Fourth Year-IS', 'Fourth Year-SE'))
+    C2.current(0)
+    C2.place(x=260, y=147)
+
+    def msg():
+        messagebox.showinfo('', 'You are in')
+
+    BK1 = ttk.Button(kform, image=PK, command=msg).place(x=280, y=290)
+    kform.mainloop()
+
+def chess():
+    cform = tkinter.Tk()
+    cform.title('Chess Tournament')
+    cform.geometry('666x400+350+184')
+    cform.resizable(False, False)
+    PC = PhotoImage(file='C:\\Users\\Mohamed ElHmzawy\\Desktop\\resize-15763549672126938837downloada7aaaaaa.png')
+    LC1 = ttk.Label(cform, text='Inelligence Is Power', font=('impact', 20)).pack()
+    LC6 = ttk.Label(cform,
+                    text='??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????').pack()
+    LC2 = ttk.Label(cform, text='Name', font=('impact', 15)).place(x=150, y=100)
+    LC4 = ttk.Label(cform, text='Year', font=('impact', 15)).place(x=150, y=140)
+    TC1 = ttk.Entry(cform, font=('consolas', 15)).place(x=260, y=105)
+    C2 = ttk.Combobox(cform, state='readonly', value=(
+    'Choose a year', 'First Year', 'Second Year', 'Third Year-CS', 'Third Year-IT', 'Third Year-IS', 'Third Year-SE',
+    'Fourth Year-CS', 'Fourth Year-IT', 'Fourth Year-IS', 'Fourth Year-SE'))
+    C2.current(0)
+    C2.place(x=260, y=147)
+
+    def msg():
+        messagebox.showinfo('', 'You are in')
+
+    BC1 = ttk.Button(cform, image=PC, command=msg).place(x=280, y=290)
+    cform.mainloop()
+
+def ping():
+    pform = tkinter.Tk()
+    pform.title('Ping-Pong Tournament')
+    pform.geometry('666x400+350+184')
+    pform.resizable(False, False)
+    PP = PhotoImage(file='C:\\Users\\Mohamed ElHmzawy\\Desktop\\resize-15763549672126938837downloada7aaaaaa.png')
+    LP1 = ttk.Label(pform, text='Hit Like a Hummer', font=('impact', 20)).pack()
+    LP6 = ttk.Label(pform,
+                    text='??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????').pack()
+    LP2 = ttk.Label(pform, text='Name', font=('impact', 15)).place(x=150, y=100)
+    LP4 = ttk.Label(pform, text='Year', font=('impact', 15)).place(x=150, y=140)
+    TP1 = ttk.Entry(pform, font=('consolas', 15)).place(x=260, y=105)
+    C2 = ttk.Combobox(pform, state='readonly', value=(
+    'Choose a year', 'First Year', 'Second Year', 'Third Year-CS', 'Third Year-IT', 'Third Year-IS', 'Third Year-SE',
+    'Fourth Year-CS', 'Fourth Year-IT', 'Fourth Year-IS', 'Fourth Year-SE'))
+    C2.current(0)
+    C2.place(x=260, y=147)
+
+    def msg():
+        messagebox.showinfo('', 'You are in')
+
+    BP1 = ttk.Button(pform, image=PP, command=msg).place(x=280, y=290)
+    pform.mainloop()
+
+def music():
+    muform = tkinter.Tk()
+    muform.title('Music Tournament')
+    muform.geometry('666x400+350+184')
+    muform.resizable(False, False)
+    PMU = PhotoImage(file='C:\\Users\\Mohamed ElHmzawy\\Desktop\\resize-15763549672126938837downloada7aaaaaa.png')
+    LMU1 = ttk.Label(muform, text='Music Is Soul Power', font=('impact', 20)).pack()
+    LMU6 = ttk.Label(muform,
+                     text='??????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????').pack()
+    LMU2 = ttk.Label(muform, text='Name', font=('impact', 15)).place(x=150, y=100)
+    LMU4 = ttk.Label(muform, text='Year', font=('impact', 15)).place(x=150, y=140)
+    LMU5 = ttk.Label(muform, text='Instrument', font=('impact', 15)).place(x=150, y=180)
+    TMU1 = ttk.Entry(muform, font=('consolas', 15)).place(x=260, y=105)
+    C2 = ttk.Combobox(muform, state='readonly', value=(
+    'Choose a year', 'First Year', 'Second Year', 'Third Year-CS', 'Third Year-IT', 'Third Year-IS', 'Third Year-SE',
+    'Fourth Year-CS', 'Fourth Year-IT', 'Fourth Year-IS', 'Fourth Year-SE'))
+    C2.current(0)
+    C2.place(x=260, y=147)
+    C2 = ttk.Combobox(muform, state='readonly', value=(
+    'Choose an instruments', 'Singing', 'Violin', 'Guitar', 'Biano', 'Kanon', 'Oud', 'Nai', 'Clarenit', 'Tabla',
+    'Xelefon'))
+    C2.current(0)
+    C2.place(x=260, y=185)
+
+    def msg():
+        messagebox.showinfo('', 'You are in')
+
+    BMU1 = ttk.Button(muform, image=PMU, command=msg).place(x=280, y=290)
+    muform.mainloop()

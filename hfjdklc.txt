@@ -1,0 +1,32 @@
+import tkinter
+from tkinter import ttk
+from tkinter import *
+form1 = tkinter.Tk()
+dog = PhotoImage (file = 'C:\\Users\\Mohamed ElHmzawy\\Pictures\\Capture.PNG')
+label = ttk.Label(form1, image = dog)
+PhotoImage (file = 'C:\\Users\\Mohamed ElHmzawy\\Pictures\\Capture.PNG')
+label.pack()
+def Form2() :
+    form2 = tkinter.Tk()
+    form2.title('FCI-Activities')
+    form2.geometry('400x300+500+200')
+    form2.resizable(False, False)
+    form2.config(background='grey')
+    T1 = ttk.Entry(form2, font=('consolas', 18)).pack()
+    T2 = ttk.Entry(form2, font=('consolas', 18)).pack()
+    T3 = ttk.Entry(form2, font=('consolas', 18)).pack()
+    T4 = ttk.Entry(form2, font=('consolas', 18)).pack()
+    L2 = ttk.Label(form2, text='Team Name', font=('arial', 18)).pack()
+    L3 = ttk.Label(form2, text='Kit Color', font=('arial', 18)).pack()
+    L4 = ttk.Label(form2, text='Year', font=('arial', 18)).pack()
+    L5 = ttk.Label(form2, text='Leader Name', font=('arial', 18)).pack()
+
+    form2.mainloop()
+form1.title('FCI-Activities')
+form1.geometry('800x600')
+form1.resizable(False,False)
+L1 = ttk.Label(form1,text='Welcome Champ',font=('impact',25)).pack()
+B1 = ttk.Button(form1,text='Football',command=Form2).pack()
+B2 = ttk.Button(form1,text='Join',command=Form2).pack()
+B3 = ttk.Button(form1,text='Join',command=Form2).pack()
+form1.mainloop()
